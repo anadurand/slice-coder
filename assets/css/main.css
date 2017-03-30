@@ -1,0 +1,11 @@
+body{
+  margin: 5%;
+}
+textarea{
+  background-color: #dbdde3;
+  
+}
+button{
+  background-color: #1b5be1;
+  color: white;
+}
