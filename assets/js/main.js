@@ -8,9 +8,10 @@ boton.addEventListener("click",function(){
     if(text.value != "" && user.value != ""){
       var docF = document.createDocumentFragment();
       var div = document.createElement("div");
-      div.addClassList = "posted";
+      div.className = "posted";
       var p = document.createElement("p");
       var span = document.createElement("span");
+      span.className = "span";
       p.innerHTML = text.value;
       span.innerHTML = user.value;
       div.appendChild(p);
@@ -20,3 +21,4 @@ boton.addEventListener("click",function(){
     }
 
 });
+//hacer un div, se maneja mejor os elementos y dentro el span y poner text-align rigth
