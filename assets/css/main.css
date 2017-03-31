@@ -1,11 +1,33 @@
 body{
   margin: 5%;
 }
-textarea{
+textarea,input{
   background-color: #dbdde3;
-  
+
+}
+
+h1{
+  text-align: center;
 }
 button{
+  border: none;
+  text-align: center;
+  font-size: 15px;
   background-color: #1b5be1;
   color: white;
+  width: 17%;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+img{
+  width: 30%;
+  height: 20%;
+  margin-left: 40%;
+}
+.form{
+  margin-left: 30%;
 }
