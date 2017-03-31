@@ -31,3 +31,11 @@ img{
 .form{
   margin-left: 30%;
 }
+.posted{
+  border-style: solid;
+  border-color: blue;
+  width: 50%;
+}
+.posted span{
+  text-align: left;
+}

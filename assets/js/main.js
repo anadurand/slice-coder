@@ -1,16 +1,22 @@
 var boton = document.getElementById("enviar");
 var post =  document.getElementById("post");
 
-boton.addEventListener(function(){
+boton.addEventListener("click",function(){
 
     var text = document.getElementById("text");
-    if(text.value != ""){
+    var user = document.getElementById("user");
+    if(text.value != "" && user.value != ""){
       var docF = document.createDocumentFragment();
       var div = document.createElement("div");
-
-      div.nodeValue = text;
+      div.addClassList = "posted";
+      var p = document.createElement("p");
+      var span = document.createElement("span");
+      p.innerHTML = text.value;
+      span.innerHTML = user.value;
+      div.appendChild(p);
+      div.appendChild(span);
       docF.appendChild(div);
-
+      post.appendChild(docF);
     }
 
 });
