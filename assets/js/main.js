@@ -1,3 +1,6 @@
+
+
+
 var boton = document.getElementById("enviar");
 var post =  document.getElementById("post");
 
@@ -10,14 +13,19 @@ boton.addEventListener("click",function(){
       var div = document.createElement("div");
       div.className = "posted";
       var p = document.createElement("p");
+      var divSpan = document.createElement("div");
       var span = document.createElement("span");
-      span.className = "span";
+      divSpan.className = "span";
       p.innerHTML = text.value;
       span.innerHTML = user.value;
       div.appendChild(p);
-      div.appendChild(span);
+      divSpan.appendChild(span);
+      div.appendChild(divSpan);
       docF.appendChild(div);
-      post.appendChild(docF);
+      console.log(text.value);
+      text.value = "";
+      user.value = "";
+      post.insertBefore(docF,post.childNodes[0]);
     }
 
 });

@@ -1,5 +1,6 @@
 body{
   margin: 5%;
+  background-color: #F9D74F;
 }
 
 
@@ -23,22 +24,34 @@ button:hover {
 img{
   width: 30%;
   height: 20%;
-  margin-left: 40%;
+  margin-left: 35%;
+}
+button{
+  margin: 1%;
+}
+.form span{
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 1%;
 }
 .form, .post{
   margin-left: 30%;
 }
 .posted{
-  position: relative;
-  border-style: solid;
-  border-color: blue;
-  width: 70%;
+  padding: 1%;
+  margin: 2% 0%;
+  border-style: groove;
+  border-color: #B9EBF0;
+  border-width: thin;
+  width: 66%;
   display: block;
-}
-.posted p{
+  background-color: #FEC300;
 
 }
-.posted .span{
-  float: right;
-  display: inline-block;
+.posted p{
+  text-align: justify;
+  font-size: 17px;
+}
+.posted div.span{
+  text-align: right;
 }
